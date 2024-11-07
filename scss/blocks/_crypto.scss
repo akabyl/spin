@@ -1,0 +1,79 @@
+.crypto {
+	position: relative;
+	overflow: hidden;
+	// .crypto__inner
+	&__inner {
+		display: flex;
+		align-items: center;
+		background-color: #241534;
+		padding: 32px 32px 32px 90px;
+    border-radius: 10px;
+	}
+	// .crypto__left
+	&__left {
+		max-width: 280px;
+		width: 100%;
+	}
+	// .crypto__right
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-left: auto;
+	}
+	&__title {
+		font-size: 28px;
+		line-height: 1.2;
+		font-weight: 600;
+		text-transform: capitalize;
+		max-width: 273px;
+	}
+}
+.crypto-left {
+	// .crypto-left__img
+	&__img {
+		position: absolute;
+	}
+	// .crypto-left__ether
+	&__ether {
+		left: -10px;
+		bottom: -10px;
+	}
+	// .crypto-left__bit
+	&__bit {
+		left: 293px;
+		bottom: 0;
+	}
+	// .crypto-left__teth
+	&__teth {
+		top: 30px;
+		left: 427px;
+	}
+}
+
+.crypto-right {
+	// .crypto-right__list
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 11px;
+	}
+	// .crypto-right__item
+	&__item {
+		padding: 10px 15px;
+		background: #150d1f80;
+		border-radius: 5px;
+	}
+	// .crypto-right__link
+	&__link {
+		img {
+			width: 31px;
+			height: 17px;
+		}
+	}
+	.btn-fill {
+		padding: 20px 46px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}

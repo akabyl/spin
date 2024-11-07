@@ -1,0 +1,28 @@
+.btn {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+}
+.login {
+}
+.register {
+}
+.btn-fill {
+	background: linear-gradient(100deg, #142aa2 0%, #9e41fe 100%);
+	border-radius: 5px;
+	padding: 21px 33px;
+}
+
+.btn-filled {
+	text-align: center;
+	background-color: #150d1f;
+	padding: 16px 19px;
+	border-radius: 5px;
+}
+
+.btn-all {
+	padding: 16px 30px;
+	background-color: #271937;
+	text-align: center;
+}

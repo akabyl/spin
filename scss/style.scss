@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/utils';
+@import './base/containers';
+@import './base/sticky-footer';
+
+/* Blocks */
+@import './blocks/main';
+@import './blocks/btn';
+@import './blocks/aside';
+@import './blocks/header';
+@import './blocks/banner';
+@import './blocks/crypto';
+@import './blocks/features';
+@import './blocks/games';
+@import './blocks/read';
+@import './blocks/footer';

@@ -1,0 +1,24 @@
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	height: 100%;
+}
+
+.wrapper__inner {
+	max-width: 1188px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.section {
+	padding-top: 22px;
+}
+
+.title {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 26px;
+}

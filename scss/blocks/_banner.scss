@@ -1,0 +1,111 @@
+.banner {
+	// .banner__inner
+	&__inner {
+		display: flex;
+		gap: 16px;
+	}
+	// .banner__big
+	&__big {
+		background: linear-gradient(51deg, #142aa2 0%, #9e41fe 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		max-width: 641px;
+		width: 100%;
+		padding: 68px 36px 36px;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	// .banner__title
+	&__title {
+		font-size: 50px;
+		font-weight: 600;
+		line-height: 60px;
+		max-width: 387px;
+		margin-bottom: 44px;
+		text-transform: capitalize;
+	}
+	// .banner__small
+	&__small {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}
+
+.banner-small {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 238px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 20px 25px;
+	// .banner-small__info
+	&__info {
+		text-align: center;
+		margin-top: 110px;
+		align-self: center;
+	}
+	// .banner-small__subtitle
+	&__subtitle {
+		font-size: 16px;
+		line-height: 19px;
+		margin-bottom: 22px;
+	}
+	// .banner-small__title
+	&__title {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 26px;
+		margin-bottom: 20px;
+    text-transform: uppercase;
+	}
+	// .banner-small__code
+	&__code {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 11px 21px;
+		background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 144px;
+		span {
+			font-weight: 600;
+		}
+	}
+	// .banner-small__bottom
+	&__bottom {
+		margin-top: auto;
+	}
+	// .banner-small__top
+	&__top {
+	}
+	// .banner-small__cash
+	&__cash {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 26px;
+	}
+	// .banner-small__cash-descr
+	&__cash-descr {
+	}
+	// .banner-small__bottom-text
+	&__bottom-title {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+	// .banner-small__bottom-title
+	&__bottom-text {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	// .banner-small__bottom-procent
+	&__bottom-procent {
+		font-size: 60px;
+		font-weight: 600;
+		line-height: 72px;
+		margin-top: 15px;
+	}
+}

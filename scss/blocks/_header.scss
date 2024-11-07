@@ -1,0 +1,89 @@
+.header {
+	padding: 15px 0 0;
+	// .header__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
+		margin-bottom: 20px;
+	}
+	// .header__bottom
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
+		background: linear-gradient(0deg, #241534 0%, rgba(39, 25, 55, 0) 100%);
+	}
+}
+.search-block {
+	position: relative;
+	background-color: #271937;
+	display: flex;
+	align-items: center;
+	padding: 10px 15px 10px 20px;
+	max-width: 440px;
+	width: 100%;
+	// .search-block__input
+	&__input {
+		max-width: 440px;
+		width: 100%;
+		background-color: #271937;
+		border-radius: 5px;
+		color: #fff;
+		padding-right: 20px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 21.6px;
+		&::placeholder {
+			font-family: var(--font-main);
+			color: #fff;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 21.6px;
+		}
+	}
+	// .search-block__btn
+	&__btn {
+	}
+}
+
+.auth {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+.header-bottom {
+	padding: 15px 38px 15px 17px;
+	// .header-bottom__list
+  .jackpot-logo {
+    max-width: 80px;
+  }
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	// .header-bottom__item
+	&__item {
+		display: flex;
+		align-items: center;
+    gap: 10px;
+		border-right: 1px solid #3d2f4b;
+		padding: 0 15px;
+	}
+	// .header-bottom__item-block
+	&__item-block {
+	}
+	// .header-bottom__title
+	&__title {
+		line-height: 18px;
+    margin-bottom: 5px;
+	}
+	// .header-bottom__price
+	&__price {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 21px;
+	}
+}
