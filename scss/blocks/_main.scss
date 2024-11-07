@@ -22,3 +22,15 @@
 	font-weight: 600;
 	line-height: 26px;
 }
+
+.logo {
+}
+
+@media (max-width: 1367px) {
+	.wrapper {
+		gap: 15px;
+	}
+	.wrapper__inner {
+		max-width: 1110px;
+	}
+}

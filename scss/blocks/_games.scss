@@ -59,7 +59,7 @@
 	// .games__list
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(167px, 213px));
+		grid-template-columns: repeat(5, minmax(167px, 213px));
 		align-items: center;
 		gap: 20px 19px;
 	}

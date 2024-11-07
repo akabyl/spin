@@ -111,7 +111,7 @@ legend {
 
 :root {
   --container-width: 1452px;
-  --container-padding: 20px;
+  --container-padding: 10px;
   --font-main: "Poppins", sans-serif;
   --font-accent: "Inter", sans-serif;
   --page-bg: #150d1f;
@@ -213,6 +213,14 @@ body {
   line-height: 26px;
 }
 
+@media (max-width: 1367px) {
+  .wrapper {
+    gap: 15px;
+  }
+  .wrapper__inner {
+    max-width: 1110px;
+  }
+}
 .btn {
   display: inline-block;
   font-size: 12px;
@@ -257,6 +265,9 @@ body {
 }
 .aside__nav-center {
   padding: 33px 41px 38px 28px;
+}
+.aside__logo-wrapper {
+  padding: 31px 0 22px 42px;
 }
 
 .aside-nav__title {
@@ -310,10 +321,6 @@ body {
 
 .aside-hr {
   border-bottom: 1px solid #281c37;
-}
-
-.logo-wrapper {
-  padding: 31px 0 22px 42px;
 }
 
 @media (max-width: 1367px) {
@@ -637,7 +644,7 @@ body {
 }
 .games__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(167px, 213px));
+  grid-template-columns: repeat(5, minmax(167px, 213px));
   align-items: center;
   gap: 20px 19px;
 }
@@ -817,6 +824,10 @@ body {
   justify-content: space-between;
   gap: 10px;
 }
+.footer__left {
+  max-width: 210px;
+  width: 100%;
+}
 .footer__nav {
   display: flex;
   justify-content: space-between;
@@ -843,4 +854,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer__coin-info {
+  margin: 28px 0 36px;
+  border: 1px solid #3e2f50;
+  border-radius: 5px;
+  background: rgba(39, 25, 55, 0.5019607843);
+  padding: 8px 0 9px 13px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 173px;
+}
+.footer-social__item {
+  width: 32px;
+  height: 32px;
+  background-color: #271937;
+  border-radius: 50%;
+  padding: 9px 10px;
 }/*# sourceMappingURL=style.css.map */

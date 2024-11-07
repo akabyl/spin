@@ -10,6 +10,8 @@
 	}
 	// .footer__left
 	&__left {
+		max-width: 210px;
+		width: 100%;
 	}
 	// .footer__nav
 	&__nav {
@@ -54,5 +56,37 @@
 	}
 	// .footer__bottom-right
 	&__bottom-right {
+	}
+	// .footer__coin-info
+	&__coin-info {
+		margin: 28px 0 36px;
+		border: 1px solid #3e2f50;
+		border-radius: 5px;
+		background: #27193780;
+		padding: 8px 0 9px 13px;
+		display: flex;
+		align-items: center;
+		gap: 28px;
+	}
+	// .footer__social
+	&__social {
+	}
+}
+
+.footer-social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	max-width: 173px;
+	// .footer-social__item
+	&__item {
+		width: 32px;
+		height: 32px;
+		background-color: #271937;
+		border-radius: 50%;
+		padding: 9px 10px;
+	}
+	// .footer-social__link
+	&__link {
 	}
 }

@@ -17,6 +17,9 @@
 	&__nav-center {
 		padding: 33px 41px 38px 28px;
 	}
+	&__logo-wrapper {
+		padding: 31px 0 22px 42px;
+	}
 }
 .aside-nav {
 	// .aside-nav__title
@@ -79,11 +82,6 @@
 
 .aside-hr {
 	border-bottom: 1px solid #281c37;
-}
-.logo-wrapper {
-	padding: 31px 0 22px 42px;
-}
-.logo {
 }
 
 @media (max-width: 1367px) {
