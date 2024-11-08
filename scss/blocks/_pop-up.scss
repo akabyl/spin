@@ -1,0 +1,142 @@
+/* Затемнение экрана */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+	z-index: 10;
+}
+
+.pop-up-login,
+.pop-up-register {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.pop-up {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.8);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 11;
+	max-width: 1096px;
+	width: 100%;
+	// .pop-up__inner
+	&__inner {
+		background-color: #241534;
+		border: 1px solid #281c37;
+		border-radius: 20px;
+		justify-content: space-between;
+		overflow: hidden;
+		display: flex;
+	}
+	// .pop-up__left
+	&__left {
+		max-width: 440px;
+		width: 100%;
+		padding: 35px 0 35px 54px;
+	}
+	// .pop-up__title
+	&__title {
+		font-size: 46px;
+		font-weight: 600;
+		line-height: 55px;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		margin-bottom: 40px;
+	}
+	// .pop-up__text
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		color: #97aac0;
+		margin-bottom: 25px;
+	}
+	// .pop-up__link
+	&__link {
+		font-weight: 600;
+		color: #fff;
+	}
+	&__line-wrap {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+	// .pop-up__span
+	&__span {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 19px;
+	}
+	// .pop-up__line
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: #544069;
+	}
+	// .pop-up__social
+	&__social {
+		display: flex;
+		gap: 20px;
+	}
+	// .pop-up__right
+	&__right {
+		border-radius: 20px;
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		z-index: 9;
+	}
+}
+
+.pop-up-social {
+	// .pop-up-social__link
+	&__link {
+		background: #2f1d42;
+		padding: 15px 0;
+		max-width: 210px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Поп-ап активен */
+.overlay.active,
+.pop-up.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pop-up.active {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up-register {
+
+	.pop-up__inner {
+		flex-direction: row-reverse;
+	}
+	.pop-up__left {
+		// margin-left: auto;
+		padding: 35px 54px 35px 0;
+	}
+	.pop-up__right {
+	}
+	.pop-up__close {
+		left: 25px;
+		right: unset;
+	}
+}
